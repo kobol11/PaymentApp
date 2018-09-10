@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PaymentApp
 {
-    public partial class Form1 : Form
+    public partial class Payment : Form
     {
-        public Form1()
+        public Payment()
         {
             InitializeComponent();
         }
