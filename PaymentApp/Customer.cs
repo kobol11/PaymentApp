@@ -16,5 +16,23 @@ namespace PaymentApp
         {
             InitializeComponent();
         }
+
+        bool isDataSaved = true;
+        private void frmCustomer_Load(object sender, EventArgs e)
+        {
+            cbo_Names.Items.Add("Andrew Komolafe");
+            cbo_Names.Items.Add("John Smith");
+        }
+
+        private void btn_Payment_Click(object sender, EventArgs e)
+        {
+            Form paymentForm = new frmPayment();
+            DialogResult selectedButton = paymentForm.ShowDialog();
+
+            if(selectedButton == DialogResult.OK)
+            {
+                lbl_Payment.Text = paymentForm.Tag.ToString();
+            }
+        }
     }
 }
