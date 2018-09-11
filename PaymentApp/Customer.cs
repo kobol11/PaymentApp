@@ -34,5 +34,13 @@ namespace PaymentApp
                 lbl_Payment.Text = paymentForm.Tag.ToString();
             }
         }
+
+        private void SaveData()
+        {
+            cbo_Names.SelectedIndex = -1;
+            lbl_Payment.Text = "";
+            isDataSaved = true;
+            cbo_Names.Focus();
+        }
     }
 }
