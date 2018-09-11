@@ -68,6 +68,7 @@
             this.rdoBillCustomer.TabStop = true;
             this.rdoBillCustomer.Text = "Bill Customer";
             this.rdoBillCustomer.UseVisualStyleBackColor = true;
+            this.rdoBillCustomer.CheckedChanged += new System.EventHandler(this.Billing_CheckedChanged);
             // 
             // rdoCreditCard
             // 
@@ -81,6 +82,7 @@
             this.rdoCreditCard.TabStop = true;
             this.rdoCreditCard.Text = "Credit card";
             this.rdoCreditCard.UseVisualStyleBackColor = true;
+            this.rdoCreditCard.CheckedChanged += new System.EventHandler(this.Billing_CheckedChanged);
             // 
             // lblCreditCardType
             // 
@@ -169,6 +171,7 @@
             this.btnOK.TabIndex = 9;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // btnCancel
             // 
@@ -206,6 +209,7 @@
             this.Name = "frmPayment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Payment";
+            this.Load += new System.EventHandler(this.frmPayment_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
