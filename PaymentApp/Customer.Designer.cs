@@ -56,6 +56,7 @@
             this.cbo_Names.Name = "cbo_Names";
             this.cbo_Names.Size = new System.Drawing.Size(263, 21);
             this.cbo_Names.TabIndex = 1;
+            this.cbo_Names.SelectedIndexChanged += new System.EventHandler(this.DataChanged);
             // 
             // label1
             // 
@@ -75,6 +76,7 @@
             this.lbl_Payment.Name = "lbl_Payment";
             this.lbl_Payment.Size = new System.Drawing.Size(0, 13);
             this.lbl_Payment.TabIndex = 3;
+            this.lbl_Payment.TextChanged += new System.EventHandler(this.DataChanged);
             // 
             // btn_Payment
             // 
@@ -107,6 +109,7 @@
             this.btn_Exit.TabIndex = 6;
             this.btn_Exit.Text = "Exit";
             this.btn_Exit.UseVisualStyleBackColor = true;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // frmCustomer
             // 
@@ -125,6 +128,7 @@
             this.Name = "frmCustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCustomer_FormClosing);
             this.Load += new System.EventHandler(this.frmCustomer_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
